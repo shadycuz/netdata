@@ -126,7 +126,7 @@ if [ -z "${NAME}" ]
         else
             error "a docker id cannot be extracted from docker cgroup '${CGROUP}'."
         fi
-    elif [[ "${CGROUP}" =~ ^.*kubepods[_/].*[_/]pod[a-fA-F0-9-]+[_/][a-fA-F0-9]+$ ]]
+    elif [[ "${CGROUP}" =~ ^.*kubepods[_/].*pod[a-fA-F0-9-]+[_/][a-fA-F0-9]+$ ]]
         then
         # kubernetes
 
